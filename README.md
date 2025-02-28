@@ -30,6 +30,6 @@ The scraper uses `loguru` for structured logging. Logs are saved in `scrape.log`
 - If the website structure changes, update the HTML parsing logic accordingly.
 - The scraper depends on `daily_event_monitor` for JSON data handling; ensure it's available.
 
-## License
+## Cron Syntax
 
-This project is open-source and available under the MIT License.
+The initial cron expression `0 20 * * *` means the workflow runs every day at exactly 8:00 PM UTC. 0 → At the 0th minute  20 → At the 20th hour `*` → Any day of the month `*` → Any month `*` → Any day of the week
